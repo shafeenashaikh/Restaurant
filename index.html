@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="C:\Users\intel\Desktop\My Restaurant\style.css">
+	<link rel="stylesheet" type="text/css" href="C:\Users\intel\Desktop\My Restaurant\style1.css">
+	<title>Responsive Website</title>
+</head>
+
+<body>
+	
+    <div class="wrapper"> 
+		<nav class="menu">
+			<button aria-expanded="false" aria-controls="menu-list">
+			<span class="open">☰</span>
+			<span class="close">×</span>
+			Menu
+			</button>
+			<ul id="menu-list">
+				<li>
+					<a href="">Tacos</a>
+				</li>
+
+				<li>
+					<a href="">Beers</a>
+				</li>
+
+				<li>
+					<a href="">Wines</a>
+				</li>
+
+				<li>
+					<a href="">Desserts</a>
+				</li>
+
+				<li>
+					<a href="">Reservations</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="top">
+			<header class="hero">
+				<h1>Terry's Taco joint</h1>
+				<p>Pretty Good Tocols</p>
+			</header>
+		
+			<div class="cta cta1">
+				<p class="Price">$1.99</p>
+				<p>Tacos</p>
+			</div>
+			
+			<div class="cta cta2">
+				<p class="Price">$3.99</p>
+				<p>Kombucha</p>
+			</div>
+		</div>
+
+		<section class="features">
+			<div class="feature">
+				<span class="icon">🌮</span>
+				<h3>Tacos</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+			</div>
+			  <div class="feature">
+                <span class="icon">🍺</span>
+                <h3>Beer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+
+			<div class="feature">
+				<span class="icon">🍷</span>
+				<h3>Wine</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+			</div>
+
+			<div class="feature">
+				<span class="icon">🎵</span>
+				<h3>Music</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+			</div>
+		</section>
+
+		<section class="about">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images%20(1).jpg">
+			<div class="about_details">
+				<h2>Featured Tacos</h2>
+				<p>Slim profile, easy to hold and loaded with cheese.</p>
+				<p>This is the one you have been waiting</p>
+				<button>Learn More</button>
+			</div>
+		</section>
+
+		<section class="gallery">
+			<h2>Instant Grams</h2>
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/img3.jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/photo-1621757458931-a1b076e5a8bb.jpg">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/photo-1622020619472-1ce723164183.jpg">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images%20(7).jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images%20(8).jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images%20(5).jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images.jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images%20(6).jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/images%20(3).jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/image10.jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/image11.jpg" height="230">
+			<img src="file:///C:/Users/intel/Desktop/My%20Restaurant/IMG/image9.jpg" height="230">
+		</section>
+	</div>
+	
+	<script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({
+            target
+        }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+    </script>
+
+</body>
+</html>
